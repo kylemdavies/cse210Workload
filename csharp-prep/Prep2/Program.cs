@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         Console.Write("What was your number grade?");
-        int numGrade = int.Parse(Console.ReadLine());
+        float numGrade = float.Parse(Console.ReadLine());
         string lGrade = "";
         if(numGrade >= 90){
             lGrade = "A";
