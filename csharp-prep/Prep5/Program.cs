@@ -13,6 +13,7 @@ class Program
             double sqr = SquareNumber(num);
             p.DisplayResult(name,sqr);
             Console.Write("If you would like to close the program Enter \'1\'");
+            cont = int.Parse(Console.ReadLine());
         }
     }
     public void DisplayWelcome()
