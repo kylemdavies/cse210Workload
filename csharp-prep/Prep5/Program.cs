@@ -4,12 +4,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        Program p = new Program();
-        p.DisplayWelcome();
-        string name = PromptUserName();
-        int num = PromptUserNumber();
-        double sqr = SquareNumber(num);
-        p.DisplayResult(name,sqr);
+        int cont = 0;
+        while(cont != 1){
+            Program p = new Program();
+            p.DisplayWelcome();
+            string name = PromptUserName();
+            int num = PromptUserNumber();
+            double sqr = SquareNumber(num);
+            p.DisplayResult(name,sqr);
+            Console.Write("If you would like to close the program Enter \'1\'");
+        }
     }
     public void DisplayWelcome()
     {
