@@ -50,7 +50,7 @@ class Program
                 Console.WriteLine(attentionLine);
                 Console.WriteLine("Please enter the filename (Ex. 'filename.txt')");
                 string fileName = Console.ReadLine();
-                System.IO.File.WriteAllLines(fileName, entry._entries);
+                System.IO.File.WriteAllLines($"{fileName}.txt", entry._entries);
                 Console.WriteLine($"You successfully saved your entries to {fileName}");
                 Console.WriteLine(attentionLine);
                 }
