@@ -35,9 +35,9 @@ class Program
             //Load entries
             else if (number == 3) {
                 Console.WriteLine(attentionLine);
-                Console.WriteLine("Please enter the filename (Ex. 'filename.txt')");
+                Console.WriteLine("Please enter the filename (Ex. 'filename')");
                 string filename = Console.ReadLine();
-                string[] lines = System.IO.File.ReadAllLines(filename);
+                string[] lines = System.IO.File.ReadAllLines($"{filename}.txt");
                 foreach (string line in lines)
                 {
                     entry._entries.Add(line);

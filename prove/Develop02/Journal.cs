@@ -9,10 +9,11 @@ public class Journal
     public void Entry()
     {
         PromptGenerator prompt = new PromptGenerator();
-        Console.WriteLine(prompt.Prompt());
+        string entryPrompt = prompt.Prompt();
+        Console.WriteLine(entryPrompt);
         string userResponse = Console.ReadLine();
 
-        _entries.Add($"{dateText} | {prompt} - {userResponse}");
+        _entries.Add($"{dateText} | {entryPrompt} - {userResponse}");
     }
 
     public void Display()
