@@ -18,7 +18,7 @@ class Program
             Console.WriteLine($"3: Load Entries");
             Console.WriteLine($"4: Save Entries");
             Console.WriteLine($"5. Close Program");
-            Console.Write($"Enter the number of the action you would like to do:");
+            Console.Write($"Enter the number of the action you would like to do: ");
             number = int.Parse(Console.ReadLine());
             //Make entry
             if (number == 1) {
@@ -35,7 +35,7 @@ class Program
             //Load entries
             else if (number == 3) {
                 Console.WriteLine(attentionLine);
-                Console.Write("Please enter the filename (Ex. 'filename')");
+                Console.Write("Please enter the filename (Ex. 'filename'): ");
                 string filename = Console.ReadLine();
                 string[] lines = System.IO.File.ReadAllLines($"{filename}.txt");
                 foreach (string line in lines)
@@ -48,7 +48,7 @@ class Program
             //Save entries
             else if (number == 4) {
                 Console.WriteLine(attentionLine);
-                Console.Write("Please enter the filename (Ex. 'filename')");
+                Console.Write("Please enter the filename (Ex. 'filename'): ");
                 string fileName = Console.ReadLine();
                 System.IO.File.WriteAllLines($"{fileName}.txt", entry._entries);
                 Console.WriteLine($"You successfully saved your entries to {fileName}");
