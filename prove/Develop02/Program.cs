@@ -48,7 +48,7 @@ class Program
             //Save entries
             else if (number == 4) {
                 Console.WriteLine(attentionLine);
-                Console.WriteLine("Please enter the filename (Ex. 'filename.txt')");
+                Console.WriteLine("Please enter the filename (Ex. 'filename')");
                 string fileName = Console.ReadLine();
                 System.IO.File.WriteAllLines($"{fileName}.txt", entry._entries);
                 Console.WriteLine($"You successfully saved your entries to {fileName}");
