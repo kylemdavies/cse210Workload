@@ -1,3 +1,5 @@
+// Not a part of main program, was just testing to see what it would look like if I had done it like we did in class. (Incomplete)
+
 public class Entry
 {
     string _date;
