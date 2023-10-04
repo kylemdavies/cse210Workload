@@ -39,7 +39,7 @@ class Program
                 string filename = Console.ReadLine();
                 string[] lines = System.IO.File.ReadAllLines($"{filename}.txt");
                 foreach (string line in lines)
-                {
+                { 
                     entry._entries.Add(line);
                 }
                 Console.WriteLine("Entries have been successfully loaded.");
