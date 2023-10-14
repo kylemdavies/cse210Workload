@@ -24,20 +24,13 @@ public class Book
             Console.WriteLine("Checked Out");
         }
     }
-    public void IsAvailable()
+    public bool IsAvailable()
     {
-        if(!_available)
-        {
-            Console.WriteLine("Checked Out!");
-        }
-        else
-        {
-            Console.WriteLine("Available!");
-        }
+        return _available;
     }
-    public void TimesRead()
+    public int TimesRead()
     {
-        Console.WriteLine($"This book has been read: {_timesRead} times.");
+        return _timesRead;
     }
     public void CheckOut()
     {
