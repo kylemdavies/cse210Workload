@@ -1,34 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Xml.Serialization;
 
-class FileHandler
+[Serializable]
+public class MyClass
 {
-    // public void SaveFile()
-    // {
-    //     Console.Write("What would you like the name of the file to be? (Ex. filename): ");
-    //     string filename = Console.ReadLine();
+    public int ID { get; set; }
+    public string Name { get; set; }
 
-    // }
-    // public List<Book> ReadFile()
-    // {
-    //     Console.Write("What would you like the name of the file to be? (Ex. filename): ");
-    //     string filename = Console.ReadLine();
-    //     string[] lines = System.IO.File.ReadAllLines($"{filename}.txt");
-    //     List<Book> books = new List<Book>();
-    //     foreach (string line in lines)
-    //     {
-    //         string[] parts = line.Split("|||");
-    //         Book b = new Book();
-    //         b.CreateFromList(parts);
-    //         books.Add(b);
-    //     }
-    //     return books;
-    // }
-    public FileHandler()
+    public MyClass(int id, string name)
     {
-
+        ID = id;
+        Name = name;
     }
-    public class ListFileHandler<T> where T : class
+
+    public MyClass()
     {
+        // Default constructor is required for serialization
+    }
+}
+
+public class ListFileHandler<T> where T : class
+{
     public static void SaveListToFile(string filePath, List<T> list)
     {
         try
@@ -64,6 +58,5 @@ class FileHandler
         }
 
         return list;
-    }
     }
 }

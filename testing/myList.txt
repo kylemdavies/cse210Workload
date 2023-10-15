@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMyClass xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MyClass>
+    <ID>1</ID>
+    <Name>Item 1</Name>
+  </MyClass>
+  <MyClass>
+    <ID>2</ID>
+    <Name>Item 2</Name>
+  </MyClass>
+  <MyClass>
+    <ID>3</ID>
+    <Name>Item 3</Name>
+  </MyClass>
+</ArrayOfMyClass>

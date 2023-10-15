@@ -1,4 +1,4 @@
-﻿// FileHandler f = new FileHandler();
+﻿
 string attentionline = "-----------------------------";
 Bookcase mybookcase = new Bookcase();
 Book Harry_Potter = new Book("Harry Potter and the Philosopher's Stone","JK Rowling");
