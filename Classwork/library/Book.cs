@@ -41,5 +41,12 @@ public class Book
         _available = true;
         _timesRead ++;
     }
+    public void createFromList(string[] parts)
+    {
+        _name = parts[0];
+        _author = parts[1];
+        _timesRead = int.Parse(parts[2]);
+        _available = bool.Parse(parts[3]);
+    }
 
 }
