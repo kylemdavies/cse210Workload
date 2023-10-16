@@ -50,4 +50,8 @@ class Bookcase
     {
         return _books;
     }
+    public void SetBooks(List<Book> books)
+    {
+        _books = books;
+    }
 }
