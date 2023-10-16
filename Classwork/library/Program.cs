@@ -1,4 +1,4 @@
-﻿
+﻿FileHandler file = new FileHandler();
 string attentionline = "-----------------------------";
 Bookcase mybookcase = new Bookcase();
 Book Harry_Potter = new Book("Harry Potter and the Philosopher's Stone","JK Rowling");
@@ -21,3 +21,4 @@ Console.WriteLine(attentionline);
 mybookcase.ShowPopularBooks(3);
 Console.WriteLine(attentionline);
 mybookcase.DisplayBooks();
+file.SaveFile(mybookcase.GetBooks());

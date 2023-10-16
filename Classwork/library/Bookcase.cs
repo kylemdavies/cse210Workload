@@ -46,4 +46,8 @@ class Bookcase
             shown++;
         }
     }
+    public List<Book> GetBooks()
+    {
+        return _books;
+    }
 }
