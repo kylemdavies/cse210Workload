@@ -6,4 +6,17 @@ class Pokedex
     {
         _pokemon.Add(p)
     }
+
+    public void FindPokemonByGen(string gen)
+    {
+        Console.WriteLine($"\nPokemon in Gen: {gen}\n");
+        foreach (Pokemon pokemon in _pokemon)
+        {
+            if(pokemon.HasPokemon(gen))
+            {
+                pokemon.Display();
+            }
+        }
+    }
+
 }
