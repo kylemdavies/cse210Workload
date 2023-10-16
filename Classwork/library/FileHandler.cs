@@ -4,9 +4,9 @@ class FileHandler
 {
     public void SaveFile()
     {
-        Console.Write("What would you like the name of the file to be? (Ex. filename): ");
-        string filename = Console.ReadLine();
-
+        Console.Write("Please enter the filename (Ex. 'filename'): ");
+        string fileName = Console.ReadLine();
+        System.IO.File.WriteAllLines($"{fileName}.txt", );
     }
     public List<Book> ReadFile()
     {

@@ -5,6 +5,10 @@ public class Book
     private int _timesRead;
     private bool _available;
 
+    public Book()
+    {
+
+    }
     public Book(string name, string author)
     {
         _name = name;
@@ -41,7 +45,7 @@ public class Book
         _available = true;
         _timesRead ++;
     }
-    public void createFromList(string[] parts)
+    public void CreateFromList(string[] parts)
     {
         _name = parts[0];
         _author = parts[1];
