@@ -2,16 +2,23 @@ using System.Xml.Serialization;
 
 class FileHandler
 {
-    public void SaveFile()
+    string fileName = "filename";
+    public void SaveFile(List<Book> books)
     {
         Console.Write("Please enter the filename (Ex. 'filename'): ");
-        string fileName = Console.ReadLine();
-        System.IO.File.WriteAllLines($"{fileName}.txt", );
+        string fileName = Console.ReadLine() ?? string.Empty;
+        using (StreamWriter outputFile = new StreamWriter(fileName + ".txt"))
+        {
+            foreach (var book in books)
+            {
+                outputFile.WriteLine(book.Stringify());
+            }
+        }
     }
     public List<Book> ReadFile()
     {
         Console.Write("What would you like the name of the file to be? (Ex. filename): ");
-        string filename = Console.ReadLine();
+        string filename = Console.ReadLine() ?? string.Empty;
         string[] lines = System.IO.File.ReadAllLines($"{filename}.txt");
         List<Book> books = new List<Book>();
         foreach (string line in lines)

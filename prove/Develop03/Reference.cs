@@ -1,12 +1,14 @@
 public class Reference
 {
-    private string _reference = "";
-    public Reference(string reference)
+    private string _name = "";
+    private int = 0;
+    
+    public Reference(string name)
     {
-        _reference = reference;
+        _name = name;
     }
-    public string getReference()
+    public string getName()
     {
-        return _reference;
+        return _name;
     }
 }

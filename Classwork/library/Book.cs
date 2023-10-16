@@ -52,5 +52,9 @@ public class Book
         _timesRead = int.Parse(parts[2]);
         _available = bool.Parse(parts[3]);
     }
+    public string Stringify()
+    {
+        return $"{_name}|||{_author}|||{_timesRead}|||{_available}";
+    }
 
 }
