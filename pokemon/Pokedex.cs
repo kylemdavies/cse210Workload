@@ -4,19 +4,26 @@ class Pokedex
     
     public void AddPokemon(Pokemon p)
     {
-        _pokemon.Add(p)
+        _pokemon.Add(p);
     }
-
-    public void FindPokemonByGen(string gen)
+    public void DisplayPokedex()
     {
-        Console.WriteLine($"\nPokemon in Gen: {gen}\n");
-        foreach (Pokemon pokemon in _pokemon)
+        foreach(Pokemon pokemon in _pokemon)
         {
-            if(pokemon.HasPokemon(gen))
-            {
-                pokemon.Display();
-            }
+            pokemon.Display();
         }
     }
+
+    // public void FindPokemonByGen(string gen)
+    // {
+    //     Console.WriteLine($"\nPokemon in Gen: {gen}\n");
+    //     foreach (Pokemon pokemon in _pokemon)
+    //     {
+    //         if(pokemon.HasPokemon(gen))
+    //         {
+    //             pokemon.Display();
+    //         }
+    //     }
+    // }
 
 }

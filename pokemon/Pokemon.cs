@@ -6,11 +6,11 @@ public class Pokemon
     private string _name;
     private string _type1;
     private string _type2;
-    private float _height;
-    private float _weight;
+    private double _height;
+    private double _weight;
 
 
-    public Pokemon(int index, int gen, string name, string type1, string type2, float height, float weight)
+    public Pokemon(int index, int gen, string name, string type1, string type2, double height, double weight)
     {
         _index = index;
         _gen = gen;
@@ -19,10 +19,6 @@ public class Pokemon
         _type2 = type2;
         _height = height;
         _weight = weight;
-    }
-        public bool IsGen(string gen)
-    {
-        return _gen.Contains(gen);
     }
     public void Display()
     {
