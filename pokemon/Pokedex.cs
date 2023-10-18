@@ -24,16 +24,16 @@ class Pokedex
         _pokemon = p;
     }
 
-    // public void FindPokemonByGen(string gen)
-    // {
-    //     Console.WriteLine($"\nPokemon in Gen: {gen}\n");
-    //     foreach (Pokemon pokemon in _pokemon)
-    //     {
-    //         if(pokemon.HasPokemon(gen))
-    //         {
-    //             pokemon.Display();
-    //         }
-    //     }
-    // }
+    public void FindPokemonByGen(int gen)
+    {
+        Console.WriteLine($"\nPokemon in Gen: {gen}\n");
+        foreach (Pokemon pokemon in _pokemon)
+        {
+            if(pokemon.IsGen(gen))
+            {
+                pokemon.Display();
+            }
+        }
+    }
 
 }

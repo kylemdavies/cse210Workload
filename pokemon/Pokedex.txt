@@ -1,3 +1,9 @@
 1|||1|||Bulbasaur|||Grass|||Poison|||0.7|||6.9
-2|||1|||Squirtle|||Water|||Poison|||0.5|||9
-3|||1|||Charmander|||Fire|||None|||0.6|||8.5
+2|||1|||Ivysaur|||Grass|||Poison|||1.0|||13.0
+3|||1|||Venusaur|||Grass|||Poison|||2.0|||100.0
+4|||1|||Charmander|||Fire|||None|||0.6|||8.5
+5|||1|||Charmeleon|||Fire|||None|||1.1|||19.0
+6|||1|||Charizard|||Fire|||Flying|||1.7|||90.5
+7|||1|||Squirtle|||Water|||None|||0.5|||9
+8|||1|||Wartortle|||Water|||None|||1.0|||22.5
+9|||1|||Blastoise|||Water|||None|||1.6|||85.5

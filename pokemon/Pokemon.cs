@@ -44,4 +44,15 @@ public class Pokemon
     {
         return $"{_index}|||{_gen}|||{_name}|||{_type1}|||{_type2}|||{_height}|||{_weight}";
     }
+    public bool IsGen(int gen)
+    {
+        if (_gen == gen)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
