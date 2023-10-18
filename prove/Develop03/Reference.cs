@@ -7,7 +7,7 @@ public class Reference
     {
         _name = name;
     }
-    public string getName()
+    public string getReference()
     {
         return _name;
     }
