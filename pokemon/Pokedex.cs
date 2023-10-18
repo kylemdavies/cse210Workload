@@ -1,3 +1,5 @@
+using System.Dynamic;
+
 class Pokedex
 {
     private List<Pokemon> _pokemon = new List<Pokemon>();
@@ -16,6 +18,10 @@ class Pokedex
     public List<Pokemon> GetPokedex()
     {
         return _pokemon;
+    }
+    public void SetPokedex(List<Pokemon> p)
+    {
+        _pokemon = p;
     }
 
     // public void FindPokemonByGen(string gen)

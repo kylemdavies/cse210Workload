@@ -1,4 +1,4 @@
 ﻿FileHandler file = new FileHandler();
 Pokedex user = new Pokedex();
-file.ReadFile();
+user.SetPokedex(file.ReadFile());
 user.DisplayPokedex();
