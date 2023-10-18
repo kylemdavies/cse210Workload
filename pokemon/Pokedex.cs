@@ -8,9 +8,9 @@ class Pokedex
     }
     public void DisplayPokedex()
     {
-        foreach(Pokemon pokemon in _pokemon)
+        foreach(Pokemon p in _pokemon)
         {
-            pokemon.Display();
+            p.Display();
         }
     }
 
