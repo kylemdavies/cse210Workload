@@ -13,6 +13,10 @@ class Pokedex
             p.Display();
         }
     }
+    public List<Pokemon> GetPokedex()
+    {
+        return _pokemon;
+    }
 
     // public void FindPokemonByGen(string gen)
     // {
