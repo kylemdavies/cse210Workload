@@ -4,7 +4,7 @@ class FileHandler
     public void SaveFile(List<Pokemon> pokemons)
     {
         Console.Write("Please enter the filename (Ex. 'filename'): ");
-        string fileName = Console.ReadLine() ?? string.Empty;
+        fileName = Console.ReadLine() ?? string.Empty;
         using (StreamWriter outputFile = new StreamWriter(fileName + ".txt"))
         {
             foreach (var pokemon in pokemons)

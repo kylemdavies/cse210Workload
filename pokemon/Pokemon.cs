@@ -11,7 +11,9 @@ public class Pokemon
 
     public Pokemon()
     {
-        
+        _name = "";
+        _type1 = "";
+        _type2 = "";
     }
 
     public Pokemon(int index, int gen, string name, string type1, string type2, double height, double weight)
