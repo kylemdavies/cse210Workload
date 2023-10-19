@@ -35,5 +35,16 @@ class Pokedex
             }
         }
     }
+    public void FindPokemonByType(int num, string type)
+    {
+        Console.WriteLine($"\nPokemon with their type{num}: {type}\n");
+        foreach (Pokemon pokemon in _pokemon)
+        {
+            if(pokemon.IsType(num,type))
+            {
+                pokemon.Display();
+            }
+        }
+    }
 
 }

@@ -55,4 +55,30 @@ public class Pokemon
             return false;
         }
     }
+    public bool IsType(int tNum, string type)
+    {
+        string t = $"type{tNum}";
+        if (t == "type1")
+        {
+            if (_type1 == type)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            if (_type2 == type)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
 }
