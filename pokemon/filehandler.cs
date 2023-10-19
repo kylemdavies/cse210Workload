@@ -15,6 +15,7 @@ class FileHandler
     }
     public List<Pokemon> ReadFile()
     {
+        
         Console.Write("What would you like the name of the file to be? (Ex. filename): ");
         string filename = Console.ReadLine() ?? string.Empty;
         string[] lines = System.IO.File.ReadAllLines($"{filename}.txt");
