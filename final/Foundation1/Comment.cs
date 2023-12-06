@@ -1,5 +1,3 @@
-using System.ComponentModel;
-
 public class Comment
 {
     private string _Commenter;
