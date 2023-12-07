@@ -1,4 +1,4 @@
-public class Lectures
+public class Lectures:Events
 {
-
+    
 }

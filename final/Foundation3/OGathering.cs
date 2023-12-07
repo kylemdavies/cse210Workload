@@ -1,4 +1,4 @@
-public class OGathering
+public class OGathering:Events
 {
-
+    
 }

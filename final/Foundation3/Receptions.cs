@@ -1,4 +1,4 @@
-public class Receptions
+public class Receptions:Events
 {
-
+    
 }
