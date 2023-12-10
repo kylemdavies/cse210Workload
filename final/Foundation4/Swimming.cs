@@ -7,7 +7,7 @@ public class Swimming : Activity
 
     public override float CalculateDistanceMPH()
     {
-        return GetDistance() * 50 / 1000 * 0.62f;
+        return (GetDistance() * 50 / 1000) * 0.62f;
     }
     public override float CalculateDistanceKPH()
     {
