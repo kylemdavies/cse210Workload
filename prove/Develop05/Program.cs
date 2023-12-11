@@ -13,7 +13,6 @@ class Program
         {
             //Displays Menu and Reads response
             string Break = $"--------------------------------------------- \nPoints: {totalPoints}\n---------------------------------------------";
-            Console.WriteLine($"Points: {totalPoints}");
             Console.WriteLine($"{Menu}");
             Console.WriteLine($"v Select a choice from the menu: ");
             Choice = int.Parse(Console.ReadLine());
